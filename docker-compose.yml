@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  fileserver:
+    image: emazzotta/simple-fileserver-docker
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+
